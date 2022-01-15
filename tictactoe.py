@@ -42,7 +42,8 @@ def has_winner(board):
             board[1] == board[2] == board[3] or
             board[4] == board[5] == board[6] or
             board[5] == board[6] == board[7] or
-            board[8] == board[9] == board[10] or
+            board[8] == "x" and board[9] == " x" and board[10] == " x" or
+            board[8] == "o" and board[9] == " o" and board[10] == " o" or
             board[9] == board[10] == board[11] or
             board[12] == board[13] == board[14] or
             board[13] == board[14] == board[15] or
